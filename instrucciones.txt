@@ -1,0 +1,25 @@
+Reglas del juego:
+
+Cada personaje tendrá un ataque especial de acuerdo a quien sea.
+Y tendra sus ataques genericos.
+
+Ataques Genericos: 
+1)Golpe
+2)Patada
+3)Cabezazo
+
+Golpe>Cabezazo
+Patada>Golpe
+Cabezazo>Patada
+
+Ataque Especial:
+
+Superman: Rayos Lasers
+Batman: Armas
+Flash: Rayos
+Wonder Woman: Latigo
+Aquaman: Agua
+Cyborg: Cañon
+
+Ataque especial:
+Superman>WonderWoman>Aquaman>Flash>Cyborg>Batman

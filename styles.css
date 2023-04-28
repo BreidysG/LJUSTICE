@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@400;600;800&family=Play:wght@400;700&family=Rubik:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("/assets/Fondo3.jpg");
+    background-position:inherit;
+    background-repeat:round;
+    background-size:auto ;
+    background-color: #301E67;
+    color: white;
+    font-family: 'Big Shoulders Inline Text', cursive;
+    height: 100vh;
+}
+
+#seleccion-heroe, #seleccion-ataque{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#titulo{
+    margin: 0;
+    font-size: 70px
+}
+
+#subtitulo{
+    font-size: 30px;
+    margin: 5px;
+}
+#seleccion-heroe input{
+    display: none;
+}
+
+#contenedor-tarjetas{
+    width: 700px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    row-gap: 14px;
+    margin-bottom: 14px;
+    justify-content: space-between;
+    
+}
+
+.tarjeta-de-heroe{
+    width: 180px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color:  #301E67;
+    box-shadow:5px 5px 13px 0px #000000, -5px -5px 13px 0px #000000;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 300ms all;
+}
+
+.tarjeta-de-heroe:hover{
+    border: 2px solid white;
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+input:checked+label{
+    background-color: #9a80eb;
+    border: 2px solid white;
+    box-shadow: 1px 0px 20px 20px #ed143dc9;    
+}
+
+.tarjeta-de-heroe img{
+    width: 100px;
+    object-fit: cover;
+}
+.titulo-heroes{
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+#boton-seleccion-heroe, #boton-reiniciar{
+    width: 200px;
+    height: 48px;
+    background-color: crimson;
+    font-size: 20px;
+    margin-top: 30px;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+#boton-reiniciar{
+    width: 130px;
+    height: 40px;
+}
+
+#contenedor-seccion-ataque{
+    margin-top: 50px ;
+    display: flex;
+    width: 700px;
+}
+
+#contenedor-ataques{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px
+}
+#contenedor-ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 10px
+}
+
+#seccion-jugador{
+    display: flex;
+    width: 350px;
+}
+
+#tarjetaIMG div{
+    background-color: #9a80eb;
+    transition: none;
+    box-shadow: 5px 5px 0px 0px #000000, -5px -5px 13px 0px #000000
+}
+
+#tarjetaIMG div:hover, #tarjetaIMG-enemigo div:hover{
+    border: 2px solid white;
+    transform: none;
+}
+
+#seccion-jugador button, #seccion-enemigo button{
+    border-radius: 20px;
+}
+
+#seccion-jugador button:hover{
+    border: 2px solid white;
+}
+#seccion-enemigo{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 350px;
+    justify-content: flex-end;
+}
+
+#tarjetaIMG-enemigo div{
+   background-color: crimson;
+   transition: none;
+   box-shadow: -5px 5px 0px 0px #000000, 5px 5px 13px 0px #000000
+}
+
+#contenedor-ataques button, #contenedor-ataques-enemigo button{
+    width: 70px;
+    height: 35px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#contenedor-ataques button{
+    background-color: #9a80eb;
+    cursor: pointer;
+    box-shadow: 5px 5px 0px 0px #000000;
+}
+
+#contenedor-ataques-enemigo button{
+   background-color: crimson;
+   box-shadow: -5px 5px 0px 0px #000000;
+}
+#tarjetaIMG{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#tarjetaIMG-enemigo img{
+    transform: scaleX(-1);
+}
+
+#mensaje{
+    width: 300px;
+    height: 201px       ;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#mensaje-jugador{
+    background-color: #9a80eb;
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px 0px #000
+}
+#mensaje-enemigo{
+    background-color: crimson;
+    border-radius: 5px;
+    box-shadow: -5px 5px 2px 0px #000
+}
+#mensaje p{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#puntaje{
+    display: flex;
+}
+#puntaje h3{
+    font-size: 30px;
+}
+#puntaje-jugador p, #puntaje-enemigo p{
+    font-size: 50px;
+    padding: 5px;
+}
+
+#resultado{
+    position: absolute;
+    top: 170px;
+    font-size: 20px;
+    font-weight: bolder
+}
+#seleccion-reiniciar{
+    justify-content: center;
+}
+
+#seleccion-reiniciar button{
+    position: absolute;
+    bottom: 260px;
+}
+
+
+    
+@media(max-width:770px){
+    #seccion-jugador{
+        flex-direction: column;
+        width: 183px;
+    }
+    #seccion-enemigo{
+        flex-direction:column;
+        align-items: flex-end;
+        width: 183px;
+    }
+    #contenedor-seccion-ataque{
+        justify-content: center;
+    }
+    #contenedor-ataques{
+        margin: 0;
+    }
+    #mensaje{
+        position: absolute;
+        bottom: 10px;
+    }
+    #puntaje{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #boton-reiniciar{
+        width: 130px;
+        height: 40px;
+    }
+    #seleccion-reiniciar button {
+        bottom: 260px;
+    }
+
+}
+
+@media(max-width: 730px){
+    #contenedor-tarjetas{
+        width: 400px;
+        display: grid;
+        grid-template-columns: 200px 200px
+    } 
+}
+
+@media(max-width: 545px){
+    #titulo{
+        font-size: 50px;
+    }
+
+    #contenedor-tarjetas{
+        width: 400px;
+        display: grid;
+        grid-template-columns: 200px;
+        justify-content: center;
+    } 
+    .tarjeta-de-heroe{
+        width: 180px;
+        height: 200px;
+    }
+    .tarjeta-de-heroe img{
+        width: 130px;
+        object-fit: cover;
+    }
+    body{
+        background-position:inherit;
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+
+   #tarjetaIMG div, #tarjetaIMG-enemigo div{
+        width: 150px;
+        height: 180px;
+   }
+   #tarjetaIMG img, #tarjetaIMG-enemigo img{
+        width: 100px;
+   }
+    
+   #puntaje{
+    position: absolute;
+    top: 112px;
+   }
+   #puntaje p{
+    font-size: 40px;
+   }
+   #puntaje h3{
+    font-size: 20px;
+   }
+   #mensaje{
+    width:180px;
+   }
+   #seleccion-reiniciar button{
+    bottom: 214px;
+   }
+   
+}

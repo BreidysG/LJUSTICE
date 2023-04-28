@@ -1,0 +1,17 @@
+{
+  "name": "ljustice",
+  "version": "1.0.0",
+  "description": "Juego hecho con HTML, CSS y Javascript.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "POO."
+  ],
+  "author": "BreidysG <breidysgutierrez8@gmail.com>",
+  "license": "MIT"
+}
