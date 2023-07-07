@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url("/assets/Fondo3.jpg");
+    background-image: url("../LJUSTICE/assets/Fondo3.jpg");
     background-position:inherit;
     background-repeat:round;
     background-size:auto ;

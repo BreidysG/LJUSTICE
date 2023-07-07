@@ -85,12 +85,12 @@ class Heroe{
     }
 }
 
-let superman = new Heroe("Superman", "/assets/Superman.png", 5)
-let batman = new Heroe("Batman", "/assets/Batman.png", 5)
-let wonderwoman = new Heroe("WonderWoman", "/assets/WonderWoman.png", 5)
-let aquaman = new Heroe("Aquaman", "/assets/Aquaman.png", 5)
-let cyborg = new Heroe("Cyborg", "/assets/Cyborg.png", 5)
-let flash = new Heroe("Flash", "/assets/Flash.png", 5)
+let superman = new Heroe("Superman", "../LJUSTICE/assets/Superman.png", 5)
+let batman = new Heroe("Batman", "../LJUSTICE/assets/Batman.png", 5)
+let wonderwoman = new Heroe("WonderWoman", "../LJUSTICE/assets/WonderWoman.png", 5)
+let aquaman = new Heroe("Aquaman", "../LJUSTICE/assets/Aquaman.png", 5)
+let cyborg = new Heroe("Cyborg", "../LJUSTICE/assets/Cyborg.png", 5)
+let flash = new Heroe("Flash", "../LJUSTICE/assets/Flash.png", 5)
 
 superman.ataques.push(
     {nombre: "🔥", id: "boton-laser", id2: "boton-laser-enemigo"},
@@ -140,7 +140,7 @@ function iniciarJuego(){
         opcionDeHeroe =
         `<input type="radio" name="heroe" id=${heroes[index].nombre}>
         <label class="tarjeta-de-heroe" for=${heroes[index].nombre}>
-            <img src=${heroes[index].foto} alt=${heroes.nombre}>
+            <img src="${heroes[index].foto}" alt=${heroes.nombre}>
             <p class="titulo-heroes">${heroes[index].nombre}</p>
         </label>`
         
